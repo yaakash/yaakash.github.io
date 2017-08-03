@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Y Aakash</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <meta property="og:image" content="https://lh3.googleusercontent.com/BIuTZk7jIFOir_0LRrcPnRt-uzzZkqQSv1IgeOmwKEo-TtDr0YMeFnql8ooRojQIZtEqpd8pvmYkOdvVlA=w1366-h768-rw-no" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="960" />
+	<meta property="og:image:height" content="889" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Y Aakash " />
+	<meta property="og:description" content="Lalit Chauhan lalitc375 http://twitter.com/lalitc375" />
+	<meta property="og:url" content="https://about.me/yaakash" />
+	<meta property="og:site_name" content="https://about.me/yaakash" />
+    <style type="text/css">
+    	body {
+   		display: flex;
+    	min-height: 100vh;
+    	flex-direction: column;
+  		}
+
+  		main {
+    	flex: 1 0 auto;
+  		}
+
+    </style>
+    <script type="text/javascript" >
+		(function($){
+  		$(function(){
+    	$('.button-collapse').sideNav();
+  		}); // end of document ready
+		})(jQuery); // end of jQuery name space
+	</script>
+	<script type="text/javascript">
+		setInterval(blinktext, 400);
+		count=0;
+		function blinktext() {
+            var cntrl = document.getElementById("lang");
+            if (count == 0)
+                txt = cntrl.innerHTML;
+            if (count % 5 == 1)
+                cntrl.innerHTML = "< HTML5 />";
+            else if(count % 5 == 2)
+                cntrl.innerHTML = "print(\"Python\")";
+            else if(count % 5 == 0)
+                cntrl.innerHTML = "printf(\"C\")";
+            else if(count % 5 == 3)
+            	cntrl.innerHTML = "cout<<\"C++\"";
+            else if(count % 5 == 4)
+            	cntrl.innerHTML = "echo \"Shell\"";
+            count++;
+        }
+	</script>
+  <script type="text/javascript" src="js/angular-min.js"></script>
+  <script type="text/javascript">
+    var mainApp=angular.module('mainApp', []);
+ mainApp.controller("indexCtrl",function ($scope,$http) {
+  // body...
+
+    $http.get("http://139.59.26.94/counter.php?id=1").success(
+      function(data,status) {
+        ;
+      });
+
+ });
+  </script>
+</head>
+<body ng-app="mainApp" ng-controller="indexCtrl">
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	<header>
+	<div class="navbar-fixed green darken-1">
+    <nav class="#3d5afe indigo accent-3" role="navigation">
+    <!--Y Aakash-->
+
+	  <div class="container">
+      <div class="nav-wrapper">
+      	<a class="button-collapse" data-activates="nav-mobile" href="#">
+		<i class="material-icons">menu</i>
+		</a>
+      	<a href="index.html"><strong>Y Aakash</strong></a>
+
+        <ul class="right hide-on-med-and-down">
+          <!-- <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li> -->
+
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="workExp.html">Work/Research Experience</a></li>
+          <li><a href="Proj.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="personal.html">Personal</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav" style="left: -250px;">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="workExp.html">Work/Research Experience</a></li>
+          <li><a href="Proj.html">Projects</a></li>
+         <li><a href="resume.html">Resume</a></li>
+         <li><a href="personal.html">Personal</a></li>
+      </ul>
+      </div>
+      </div>
+    </nav>
+
+
+  	</div>
+	</header>
+	<main>
+
+		<div class="container">
+			<section>
+			<div class="container">
+    			<br><br><br>
+
+    			<div class="row">
+
+    			<div class="col s4 offset-s4">
+    				<img src="img/aavatar.jpg" alt="" class="circle responsive-img">
+    			</div>
+
+			</div>
+			<div class="row">
+			<h5 class="center-align">
+			     I am <strong>Y. Aakash</strong>,
+                 <br><br> Computer Science UnderGrad <br><br>
+                 at Institute of Technology and Managment, Raipur.
+            </h5>
+            <br>
+            <h5 class="center-align">I Code in <h5 class="center-align" id="lang"></h5></h5>
+			</div>
+				<div class="row">
+				<div class="col s8 offset-s2">
+					<table>
+						<tr>
+							<td >
+								<a href="https://in.linkedin.com/in/lalit-chauhan-aba74470" target="_blank" ><img src="img/linkedin.png" class="responsive-img"></a>
+							</td>
+							<td >
+								<a href="https://twitter.com/lalitc375" target="_blank" ><img src="img/twitter.png" class="responsive-img"></a>
+							</td>
+							<td  >
+								<a href="https://github.com/lalitc375" target="_blank" ><img  calss="res"src="img/github.png" class="responsive-img"></a>
+							</td>
+							<td>
+								<a href="https://www.codechef.com/users/lalitc375" target="_blank" ><img src="img/codechef.png" class="responsive-img"></a>
+							</td>
+              <td>
+                <a href="https://www.hackerrank.com/lalitnitrr" target="_blank" ><img src="img/hackerRank.png" class="responsive-img"></a>
+              </td>
+							<td >
+								<a href="https://www.facebook.com/lalitc375" target="_blank" >
+								<img src="img/facebook.png" class="responsive-img"></a>
+							</td>
+              <td >
+                <a href="https://lalitc375.wordpress.com/" target="_blank" ><img src="img/wordpress.png" class="responsive-img"></a>
+              </td>
+
+              <td >
+                <a href="http://codeutsava.in/" target="_blank" ><img src="img/codeUtsava.png" class="responsive-img"></a>
+              </td>
+
+							<td >
+								<a href="mailto:lalitnitrr@gmail.com" target="_blank" ><img src="img/mail.png" class="responsive-img"></a>
+							</td>
+
+						</tr>
+					</table>
+				</div>
+				</div>
+			</div>
+			</section>
+
+
+		</div>
+	</main>
+	<footer>
+  <div class="container">
+        <div class="row">
+
+          <div class="col s2 offset-s8">
+          <div class="fb-follow" data-href="https://www.facebook.com/aakash.yp" data-width="50" data-height="15" data-layout="button_count" data-show-faces="true">
+          </div>
+
+          </div>
+        </div>
+  </div>
+  </footer>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49938796-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
